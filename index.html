@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Clicks per second</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Clicks per second</h1>
+      <p class="header__description">
+        Show your clicking speed in this simple test, you just need to click as
+        fast as you can in the box below
+      </p>
+    </header>
+    <main class="main">
+      <div id="clickZone" class="main__zone-to-click">
+        <div class="main__timer"><span id="timer">5.00</span>s</div>
+        <b class="main__stattement">Click Here</b>
+        <span class="main__clicks" id="clicks">0</span>
+      </div>
+      <div class="main__result">
+        <p><span>Clicks per second: </span><span id="cps">0</span></p>
+        <button class="main__tryAgain" id="tryAgain">Try again</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="">Github</a>
+      </div>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>

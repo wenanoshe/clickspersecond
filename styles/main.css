@@ -1,0 +1,104 @@
+body {
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #f0fff1;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: #031100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__description {
+  width: 30em;
+}
+
+/* CLICK ZONE */
+.main {
+  position: relative;
+}
+
+.main__zone-to-click {
+  width: 70vw;
+  height: 60vh;
+  background-color: #8cff69;
+  border: 2px solid #304431;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.main__zone-to-click:active {
+  transform: scale(0.99);
+}
+
+.main__stattement {
+  color: #0b3100;
+}
+
+.main__timer {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__clicks {
+  font-size: 8rem;
+}
+
+.main__tryAgain {
+  font-size: 14px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5rem;
+  background-color: #a0cde9;
+  display: none;
+}
+
+.main__tryAgain:active {
+  transform: scale(0.95);
+}
+
+.main__result {
+  user-select: none;
+  height: 2em;
+  margin-top: 1em;
+  border-radius: 5px;
+  background-color: #abf1b4;
+  color: #0b3100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* FOOTER */
+.footer {
+  display: block;
+  width: 100%;
+}
+
+.footer__container {
+  width: 100%;
+  height: 30px;
+  background-color: #a0cde9;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
